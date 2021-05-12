@@ -61,7 +61,7 @@ function Home() {
         </div>
       </div>
       <div className="p-5 md:p-10">
-        <div>
+        <div className="max-w-screen-2xl mx-auto">
           <div className="grid md:grid-cols-4 space-y-4 md:space-y-0 md:space-x-8">
             <div className="md:col-span-1">
               <div className="shadow-md rounded-xl">
@@ -179,7 +179,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="max-w-screen-2xl mx-auto">
           <div className="bg-white rounded-xl mt-4 shadow-md">
             <div className="bg-gradient-to-r from-blue-900 to-blue-bold p-2 px-4 rounded-tr-xl rounded-tl-xl">
               <span className="text-lg md:text-2xl text-white">Tus ventas de <span>{title}</span></span>
