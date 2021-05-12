@@ -27,10 +27,12 @@ function Home() {
   const [filter, setFilter] = useState({})
 
   useEffect(() => {
-    const { datafono, link, all } = cookie.getJSON('values')
-    if (datafono || link || all) setToggle(true)
-    setValues({datafono, link, all})
-    setFilter({datafono, link, all})
+    const cookies = cookie.getJSON('values')
+    if(cookies) {
+      if (cookies.datafono || cookies.link || cookies.all) setToggle(true)
+      setValues(cookies)
+      setFilter(cookies)
+    }
   }, [])
   
   const hanldeFilter = () => {
